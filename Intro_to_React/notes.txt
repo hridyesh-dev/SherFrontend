@@ -1,1 +1,19 @@
-//starting react 
+// starting react 
+HTML,CSS,JS : Mai reloading ki dikkat hai , in case of submitting form and ancor tags
+voh refresh ho rahi thi , reload ho rahi thi this was not efficient to deal with it , react came  into being 
+
+React , Angular , Vue is used to make SPA : single page application : website pe koi bhi kaam karo , no reloading 
+firr it wont be reloading, react is a LIBRARY created by facebook ut Angular is framework made my Google
+
+earlier sites were MPA: multiple page application
+
+LIBRARY vs FRAMEWORK
+if we move to a new apartment , we got minimal required stuff like 4 walls and a roof , that is our library , we will get bare minimum stuff that we need to work with
+but if we moved to a pg we get everything we needed , tv, fridge etc ... : thats FRAMEWORK , FRAMEWORK provides us the whole ecosystem 
+
+library will give us a minimal boiler plate which will make it flexible and easy to work with  
+framework will give us everything  we need to make an application
+
+NEXT JS : it is framework of react 
+
+
