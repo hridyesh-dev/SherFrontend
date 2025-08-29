@@ -52,5 +52,55 @@ USE THIS COMMAND TO SET UP THE FOLDER STRUCTURE :
 npm create vite@latest
 
 Jsx : combination of Js and HTML 
+humne HTML , CSS AND JS ko alag krr diya iss se kuch dikkat aayi like , hamari file bohot badi ho gyi 
+brwoser ko dikkat aayi hamare data ko alag alag karke load karne mai 
 
-aage continue karege
+React wated to write both Js and HTML together 
+without any kind of script tags iske liye JSX laaye
+
+JavaScript XML : we can make our own tags / user defined tags 
+ek aisi file banani hai jaha humm html and js ek saath likh paaye
+
+Babbel : used to convert any JS Version into browser understandable js 
+Transpiler : koi bhi JS ka version daalo it will compile to browser understandable JS  
+
+import / export
+
+export : to send data 
+export default a 
+
+import : to fetch data 
+import a from 'abc.jsx'
+
+few rules : 
+
+ 1) we can use default export only once in a file 
+ek baar mai ek hii baar default export krr sakte hai aur uske baad dusri baar nahi krr sakte hai 
+
+2) default export ko import karte samaye we can change the name of variable 
+jo bhi default export hua hai agar hum usse import krr rahe hai then we can change its name of the variable 
+
+agar class mai bohot bacche honge toh unhe unke naam se bulana padega
+but agar puri class mai ek hii baccha ho ga toh usse koi bhi naam se bula sakta hu
+
+
+3) export const : when we need to export multiple variables then we use export const 
+we can use multiple export const in a single file 
+
+export const a;
+export const b;
+export const c;
+
+//const import ka sabse pehla rule , humesa curly bracket lagao 
+//and pass exact names jiss naam se varibale ko export kiya tha 
+//use curly brackets and exact name while importing the export const variables
+import { a , b , c }  from "x.jsx"
+
+//package.json : it is the registery of our app which will tell what things we need 
+to run our application
+ 
+//package ka code node_modules mai hoga 
+//es lint : code ke rules ko set karna 
+
+//public : jo files globally accessable karani hai 
+//src : main kaam ya hoga 
