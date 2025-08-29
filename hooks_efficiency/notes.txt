@@ -1,0 +1,8 @@
+EVENT LISTENERS , EVENT HANDLERS , USE STATE , PROPS 
+
+keyboard , mouse are our input devices , jise ki humm input de rahe hai these are events
+and Event LISTENERS inhi events ko sunte hai and uske according logic run hota hai 
+
+event HANDLER : jo event ko sune aur uske according action/task  perform kare 
+eyes / nose / ears : event listeners 
+mouth / hands : event handlers : they perform the acton after listening to the events 
