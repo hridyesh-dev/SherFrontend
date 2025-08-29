@@ -14,6 +14,39 @@ but if we moved to a pg we get everything we needed , tv, fridge etc ... : thats
 library will give us a minimal boiler plate which will make it flexible and easy to work with  
 framework will give us everything  we need to make an application
 
-NEXT JS : it is framework of react 
+REACT  : it is a LIBRARY created by meta , it gives us flexible boilderplate to work with 
+jo install karna hai voh humm khud krr lenge 
 
+Angular : it is a framework created by Google , while angular is only the frontend framework 
 
+NEXT JS : it is the fullstack framework of react , to capture the framework market 
+
+What makes React Great ?
+browser waali website ko DOM Bolte hai , 
+yeh jo bhi website hai react ne  iski copy bana leta hai isse kehte hai virtual dom 
+
+abbt there are some changes and 
+then it'll compair the two and then apply the changes sirf unhi jaah update karega , na page ko reload karega , na application ko reload charega 
+this process of finding changes  diffing algorithm and this is called as recocillation
+
+react ki voh ability jiske wajah se hamari website puri reload nahi hoti sirf jo changes kiye 
+hai voh update ho jaaye ge 
+
+jaha changes kiye hai , jo changes kiye hai sirf vohi apply honge 
+
+we need Node to run react on our system 
+
+why do we need node ? 
+
+NPM : Node Package Manager : 
+it is used to download and use various packages whose functionality we need in our project 
+iss npm ko use karne ke liye we need NODE , bina node ke humm npm se packages nahi use/download nahi  krr sakte
+
+HOW TO SET UP YOUR REACT PROJECT : 
+npm 
+
+vite : it is the tool jiski help se humm boiler plate setup krr sakte hai 
+like humm amazon ke through shoes mangwa rahe hai 
+
+USE THIS COMMAND TO SET UP THE FOLDER STRUCTURE : 
+npm create vite@latest
