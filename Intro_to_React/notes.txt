@@ -50,3 +50,5 @@ like humm amazon ke through shoes mangwa rahe hai
 
 USE THIS COMMAND TO SET UP THE FOLDER STRUCTURE : 
 npm create vite@latest
+
+Jsx : combination of Js and HTML 
