@@ -1,0 +1,29 @@
+DIFFERENT DATA TYPES
+// you cannot see the bool values , null and undefined  on the vue/browser 
+
+// these are reserved keywords of JS These cant be seen on vue
+    <h2> Null : {nu}</h2>
+    <h2> Undefined : {u}</h2>
+    <h2> ARRAY : {arr}</h2> //ONLY NUMBERS AND STRINGS ARE visible as concatinated
+    <h2> Obj : {obj.age} | {obj.name}</h2> 
+
+//db se jo aata hai data voh json format mai hota hai , array of objects 
+// HOW WE CAN SHOW JSON , rendring the list items  
+// db mai array of objects rakhte hai how we can show this in view 
+
+loop lagake data show krr do 
+
+for each vs MAP : 
+for each kuch return nahi krr ta 
+map data ko manuplate krr ke return krrta hai 
+
+Map mai orignal array mai change nahi hoga ,
+ek nayaa array milega with updated elements 
+ 
+//use state is like the variable given by react 
+// variable name , setterFunction and default value
+
+//when we need to apply changes on the view  
+//react ko batana voh bataye ga apne Virtual DOM KO 
+//firr then its compaired and applied on the browser 
+
