@@ -1,0 +1,15 @@
+//agar humne user interactive banana hai ki user data daal paaye aur humm receive krr paaye
+AISA KUCH BANE KAISE : TWO WAY BINDING 
+YEH HOTI KAISI HAI : MAI CHAHTA HU KI MAI DATA ENTER KARU AUR VOH LIST MAI SHOW HO JAAYE 
+
+//page refresh nahi hona chahiye : THIS is the default nature of input 
+TWO WAY BINDING IS JUST FOR FORM ELEMENTS 
+FORM field ------>react(useState or anything )------>back to form field
+
+it will create a controlled element : ki react ko pata hai humm kyaa likh rahe hai 
+
+TO SAVE IN REACT :  we will use onChange on input field ------------------------
+react mai jo save hai usse input mai lagane ke liye : lagaye ge Value -------------->these are input variables 
+
+onChange se react mai save karo, value ki help se react se laake inpput field mai laao 
+ 
