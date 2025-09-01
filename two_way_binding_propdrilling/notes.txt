@@ -13,3 +13,31 @@ react mai jo save hai usse input mai lagane ke liye : lagaye ge Value ----------
 
 onChange se react mai save karo, value ki help se react se laake inpput field mai laao 
  
+
+ =============================================================================================================================
+ Components breaking and prop drilling 
+
+PROPS HELP US TO MAINTAIN READABILITY OF OUR CODE BY 
+BREAKING IT INTO REUSABLE COMPONENTS 
+
+APP.js: blank , configuration file rakho (routing , auth)
+COMPONENTS IS BROKEN ON THE BASES OF FUNCTIONALITY 
+ek component ko ek functionality se break karna chahiye 
+
+here : there are 2 functionalities 
+1) user ko register karna 
+2) user ka data dikhana 
+
+
+DATA KA FLOW BETWEEN COMPONENTS IS DONE WITH THE HELP OF PROPS
+
+COMPONENTS ka naam Capital letter mai likho
+
+Aisa data jo dono jagah use ho raha hai , we will use props here 
+between app and create/read there is parent chil relationship and 
+data is sent from parent to child through props 
+aise data jo same data share karte hai unka data is stored in their common parent 
+and send with the help of props drilling , it is unidirectional from parent to child 
+and cant go the other way
+
+DATA IS PASSED THROUGH ATTRIBUTES 
