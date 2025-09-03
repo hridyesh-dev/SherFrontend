@@ -12,6 +12,7 @@ const Appp = () => {
     //this is how we render array of list itms into the view
     //JS KA CODE RETURN KE UPAR AAYE GA AUR JO DIKHANA HAI VOH RETURN KE ADAR 
     const updatedProfiles= profiles.map((profile,index)=>{
+        //this will return us the new updated profile array
         return(
             //since we dont have an id we are using index as id
             <li key={index}>

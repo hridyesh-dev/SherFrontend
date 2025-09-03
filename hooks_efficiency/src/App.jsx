@@ -51,10 +51,9 @@ const App = () => {
 }
 
 export default App
+
 // function call is replaced by its return value 
 // a function component will always return jsx
 //can not write anything in return 
 // we can only return sigle data/value/variable/entetity
 //there must be single return in a function ad that must be the last statement 
-
-// 1 : 08 :00

@@ -104,3 +104,5 @@ to run our application
 
 //public : jo files globally accessable karani hai 
 //src : main kaam ya hoga 
+
+index.html : it is the first file jo open hota hai ,pura react id root ke andar hii hota hai 
