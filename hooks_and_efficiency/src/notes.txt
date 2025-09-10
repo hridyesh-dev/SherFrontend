@@ -1,0 +1,15 @@
+//how we can call event listeners and event handlers 
+
+// Input devices : keyboards and Mouse 
+key press , mouse press 
+
+jaise hii humm koi input de ge : THIS IS AN EVENT 
+and it will be responded with the help of event listeners 
+
+This will be done by event handler
+jo event ko sune and will respond to it 
+
+eyes , ears : event listeners
+mouth , ears : event handlers
+
+event handler perform the action after listening to the events 

@@ -1,0 +1,43 @@
+
+
+html , css , js code ki files ko alag alag files mai rakhte the , 
+iski wajah se bohot zyada files ho jaati thi 
+
+react wanted to write html and Js in same file 
+the file should behave like both html and js file 
+
+JSX : java script xml , 
+we can make user defined tags in xml 
+user apni marzi se koi bhi tag bana sakta hai 
+<abc> </abc>
+
+JSX : javascript aur html ek saath likhna hai 
+
+
+Babbel : Traspiler , used to convert advance Js into browser understandable javascript
+
+koi bhi version of js --------->|  Babbel  |----> Specific version of Js understood by the browser 
+
+different devs are writing different versions of JS , 
+so this is passed in babbel to convert to browser understandable Js 
+
+Import / Export : 
+
+export : bhejna , export default a ; : a is ready to go 
+ek file mai ek hii baar default export use krr sakte hai 
+
+agar ek se zyada export karna ho toh 
+- export const a;
+- export const b;
+- export const c;
+we can use mutiple export const in a single file 
+
+import : lena  , import a from 'path.jsx'
+default export ko import karte time we can change the name of variable
+
+when importing export const : make it in {} brackets and having the 
+same name to import them 
+import {a,b,c} from path
+
+saara kaam src folder mai hoga 
+frontend ka entry point index.html hai 
