@@ -1,0 +1,29 @@
+how different data types are rendered in our view 
+use State 
+and then Two Way Binding 
+
+we cant see boolean, used for comparison , 
+condition but cant be seen in view 
+
+we also cant see null and undefined values 
+kyuki yeh sab are reserved keywords 
+
+Array ki voh values dikhe gi which are non null , 
+undefined or boolean only strings and numbers will 
+be shown and that too in concatinated format 
+
+how we can see Json data , Array of objects 
+with the help of map
+
+DB mai array of objects ki form mai data save krr diya 
+to show this we can make use for Map 
+
+difference between ForEach and Map 
+for each : kuch naya return nahi hota 
+map : map ek new array return karega 
+
+const data = array.map((single,index)=>{
+    return (
+        //some data 
+    )
+})
