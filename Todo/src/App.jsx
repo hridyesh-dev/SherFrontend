@@ -13,7 +13,7 @@ const App = () => {
   console.log(todos);
 
   return (
-    <div>
+    <div className=' flex w-screen h-screen p-10 bg-zinc-950'>
       <Create todos={todos} settodos={settodos} />
       <hr></hr>
       <Read todos={todos} settodos={settodos} />

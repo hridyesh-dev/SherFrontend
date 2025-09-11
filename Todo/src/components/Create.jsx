@@ -41,34 +41,34 @@ const Create = (props) => {
     }
     
     //internal css
-    const buttoncss={
-        color:"white",
-        padding:"5px 10px",
-        border:"darkblue 4px solid ",
-        borderRadius:"3px",
-        backgroundColor:"black"
-    }
+    // const buttoncss={
+    //     color:"white",
+    //     padding:"5px 10px",
+    //     border:"darkblue 4px solid ",
+    //     borderRadius:"3px",
+    //     backgroundColor:"black"
+    // }
 
     
     return (
-        <>
-            <h1>CREATE TASKS</h1>
+        <div className=' w-[60%] mx-auto border p-10  text-white'>
+            <h1 className=' cursor-pointer mb-10 text-5xl text-thin '>Set<span className=' text-red-500 font-light hover:underline transition-all ease-in  '>Reminders</span><br></br>  For Tasks</h1>
             
             {/* INPUT FORM */}
             <form onSubmit={SubmitHandler}>
             
                 {/* Normal Input */}
-                <input 
+                <input className=' font-thin border-b-2 outline-0 w-[70%] text-2xl '
                     onChange={(e)=>settitle(e.target.value)}
                     value={title}
                     type="text" 
                     placeholder="title" 
                 />
 
-                <button style={buttoncss}>Create Todo</button>
+                <button className=' ml-5 text-xl px-5 rounded-2xl py-2 border-white border-2 hover:bg-emerald-800  transition-all ease-in'>Create Todo</button>
 
             </form>
-        </>
+        </div>
     )
 }
 
