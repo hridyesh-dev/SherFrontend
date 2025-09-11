@@ -1,0 +1,17 @@
+---------------- CHECKBOX ----------------------------------------------
+
+in checkbox there is no text so there cant be 
+e.target.value instead a checkbox be be checked or 
+unchecked so there is [ e.target.checked ] in case of checkbox
+yaha e.target.checked hota hai 
+
+two way binding in check box 
+
+const [completed, setCompleted] = useState(false)
+
+<input
+    checked={completed}
+    onChange={(e)=>setCompleted(e.target.checked)}
+    type="checkbox" 
+/>Completed
+            

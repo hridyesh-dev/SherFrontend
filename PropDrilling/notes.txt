@@ -1,0 +1,30 @@
+Props Drilling 
+===================
+
+Component kaise break kare and data ka flow 
+kaise ho in Components
+
+app.jsx : ko khaali rakho  mai sirf config rakho 
+routing , auths 
+
+baki sab code failado 
+
+break into conponents on the bases of functionality 
+here there are 2 functionalities : 
+1) Data Lena : User se input lena 
+2) Data Dikhana  : User ka data dikhana 
+
+parents to child unidirectional flow of data in Props 
+
+aise children jo same data share karte 
+hai uss data ko unke common parent mai 
+rakha jaata hai in case of prop Drilling
+
+Pros Drilling : PARENTS SE CHILD KI ARAF DATA BHEJNA 
+
+State management : data ko maintain karna , 
+react mai files/function/class ko Component kehte hai 
+
+React ka variable : Use State , data ka management : state management 
+useState hook ki help se state ko manage krr rahe hai 
+

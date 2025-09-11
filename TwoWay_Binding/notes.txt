@@ -8,4 +8,7 @@ aur fir useState se data wapas form ke andar show karna hai
 input mai jo data lkh raha hu react mai save karo 
 with the help of it we can make controlled element 
 
-input : onChange , value  
+input : onChange , value = variable
+
+
+

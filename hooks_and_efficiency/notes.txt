@@ -1,0 +1,5 @@
+Hooks react ke predefined functions hote hia jo humme 
+alag alag type ki functionality provide karte hai 
+
+useState : state manage karna 
+useEffect : lifeCycle manage karna 
