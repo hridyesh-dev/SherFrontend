@@ -1,2 +1,11 @@
 Steps to apply Routing In React 
 1) Wrap the app inside BrowserRouter 
+2)<Routes>
+    <Route element path/>
+</Routes>
+3) <NavLink className={(e) => ( e.isActive ? "text-red-300" : "" )} to="/">Home</NavLink>'
+
+const navigate = useNavigate()
+navigate("/product/details")
+
+Dynamic Routing : 
