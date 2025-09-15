@@ -1,0 +1,2 @@
+Steps to apply Routing In React 
+1) Wrap the app inside BrowserRouter 

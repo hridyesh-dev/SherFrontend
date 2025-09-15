@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Read.css"
 import { toast } from 'react-toastify';
-const Read = (props) => {
+import { todoContext } from './Wrapper';
+const Read = () => {
     
-    const todos=props.todos;
-    const settodos=props.settodos
+    // useContext se context use  krr sakte hai
+    //aise context kaam karta hai 
+    //jo value pass ki hai usse nikala  
+    const [todos,settodos]=useContext(todoContext)
+
 
     //delete stuff using id 
     const DeleteHandler = (id)=>{
