@@ -18,4 +18,9 @@ const [completed, setCompleted] = useState(false)
 
 
 // REACT TOSTIFY AND REACT HOOK FORMS
-React   Hook Form : for validation
+React   Hook Form : for validation and two way binding 
+
+
+
+include react toast container in main.jsx , wrap it along with app.jsx <toastContainer/>
+and then use it where its needed toast.sucess("this is my message")   toast.error("This is my error")
