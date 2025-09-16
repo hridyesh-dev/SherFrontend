@@ -1,0 +1,2 @@
+Navigation ka page nahi hai , navigation ka component hota hai 
+transition property : transition delay-150 duration-300 ease-in-out hover:text-amber-200
