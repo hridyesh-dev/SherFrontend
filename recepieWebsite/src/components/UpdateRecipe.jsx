@@ -12,8 +12,7 @@ const UpdateRecipe = () => {
     const recipe = data.find((r) => r.id === parseInt(id));
 
     const { register, handleSubmit, reset } = useForm({
-        defaultValues: recipe
-        ? {
+        defaultValues:{
             image: recipe.image,
             chef: recipe.chef,
             title: recipe.title,
@@ -21,8 +20,8 @@ const UpdateRecipe = () => {
             ingr: recipe.ingredients.join(', '),
             inst: recipe.instructions.join(', '),
             categories: recipe.category.toLowerCase(),
-            }
-        : {},
+        }
+
     });
 
     const onSubmit = (updatedRecipe) => {

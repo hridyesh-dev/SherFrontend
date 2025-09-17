@@ -1,0 +1,27 @@
+Front End  and BackEnd ko connect karne ka kaam karti hai API 
+
+earlier it was AJAX: Async Javascript And XML but that was earlier now its
+
+Async Javascript And JSON in the form of Fetch and Axios(its a third party package)
+fetch and axios is the practicle implementation of AJAX 
+
+API IS LINK WITH WHICH I CAN SEND AND RECEIVE DATA TO AND FROM BACKEND 
+
+FRONTEND : HAMESHA REQUET KARTA HAI 
+BACKEND : HAMESHA RESPONSE KARTA HAI 
+
+DATA IS REQUESTED with the help of Api 
+
+THE CONCEPT IS : AJAX 
+we implement it with the help of Fetch or Json 
+AXIOS IS BETTER 
+Fetch returns string : usko fir json mai convert karna padhta hai 
+but Axios gives json directly so we need not to change it to json 
+
+Axios ka humme ek hii object chahiye aur firr usse alag alag components
+mai use krr dena chahiye 
+
+axios ka ek hii object banaye aur usse jahah use karna chahte hai waha use karre 
+
+Agar ek ki jagah 50-60 component hote 
+toh axios ko configure karna padhta 

@@ -62,24 +62,6 @@ const About = () => {
         </button>
       </div>
 
-      {/* Features Bento Grid */}
-      <div className="max-w-6xl mx-auto mb-20">
-        <h2 className="text-3xl font-semibold text-green-300 mb-8 text-center">App Features</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-green-500/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] ${
-                index % 5 === 0 ? 'sm:col-span-2' : ''
-              }`}
-            >
-              <div className="text-4xl mb-4 transition-transform duration-300 hover:scale-110">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-green-400 mb-2">{feature.title}</h3>
-              <p className="text-gray-300">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* Featured Recipes Section */}
       <div className="max-w-6xl mx-auto">

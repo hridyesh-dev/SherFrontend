@@ -4,13 +4,16 @@ import { useParams, useNavigate, Outlet } from 'react-router-dom';
 import { recipecontext } from '../context/RecipeContext';
 
 const SingleRecipe = () => {
+  
   const { data, setdata } = useContext(recipecontext);
+  
   const { id } = useParams();
+
   const navigate = useNavigate();
 
   const recipe = data.find((recipe) => recipe.id === parseInt(id));
 
-  if (recipe) {
+  if (recipe) { 
     toast.success("Showing Recipe");
   }
 
@@ -57,7 +60,7 @@ const SingleRecipe = () => {
         <div className="flex flex-col gap-3 w-1/2">
           <img
             src={recipe.image}
-            className="grayscale h-[350px] w-[400px] hover:grayscale-0 transition-all ease-in-out duration-300"
+            className="rounded grayscale h-[350px] w-[400px] hover:grayscale-0 transition-all ease-in-out duration-300"
             alt={recipe.title}
           />
           <div className="flex flex-row gap-6">
