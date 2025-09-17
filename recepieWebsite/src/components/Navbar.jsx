@@ -16,6 +16,7 @@ const Navbar = () => {
             to="/create-recepie">
             CreateRecepie
         </NavLink>
+        
     </div>
   )
 }
