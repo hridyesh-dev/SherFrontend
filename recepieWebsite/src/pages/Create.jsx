@@ -20,6 +20,12 @@ const Create = () => {
     console.log(recipe);
     copydata.push(recipe)
     setdata(copydata)
+
+    //locla storage mai hamesha string save hota hai
+    localStorage.setItem("recipes", JSON.stringify(copydata) );
+    
+
+
     toast.success("New Recipe Added")
     navigate("/recepies")
     reset();

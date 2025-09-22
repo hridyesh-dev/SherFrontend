@@ -12,7 +12,7 @@ const Recipes = () => {
   return(
     
     <div className="flex flex-wrap mt-11 w-full mx-auto ">
-      {data.length>1?renderRecipes:<small className=' mx-auto hover:underline hover:transition-all hover:ease-in-out hover:duration-300 text-6xl text-red-500 font-bold'>No recipes Found !</small>}
+      {data.length>0?renderRecipes:<small className=' mx-auto hover:underline hover:transition-all hover:ease-in-out hover:duration-300 text-6xl text-red-500 font-bold'>No recipes Found !</small>}
     </div>
 
   )  

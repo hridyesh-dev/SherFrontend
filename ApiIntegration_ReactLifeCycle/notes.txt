@@ -24,4 +24,43 @@ mai use krr dena chahiye
 axios ka ek hii object banaye aur usse jahah use karna chahte hai waha use karre 
 
 Agar ek ki jagah 50-60 component hote 
-toh axios ko configure karna padhta 
+toh axios ko configure krr luga and fir usse outsource krr luga  jiss se mai usse alag alag tarike se use krr luga 
+
+=================================================================================================================================
+
+AN INTRO TO USE EFFECT HOOK 
+
+now we need to click on a product to get products what we we want it that way 
+where jaise hii mai open karu ap the data should be here automatically 
+
+for this i will use useEffect() hook 
+
+COMPONENT LIFECYCLE IN REACT : 
+3 STATES IN REACT 
+1) MOUNT : 
+jab component view mai show hota hai : Munting / Create 
+
+2) UNMOUNT:
+jab component view se hatt jaata hai : Unmount / remove 
+
+3)UPDATE:
+aur jab state change hota hai toh Update hota hai 
+kisi component mai change aana 
+
+
+component pehle mount hota hai -------> Then update hota hai --------> then Unmount hota hai 
+it is three parts of component lifecycle 
+
+to implement this we use useEffect hook 
+IT IS ALSO KNOWN AS LIFE CYCLE HOOK 
+
+API CALLING KE KAAM AATA HAI :
+
+example : component bann ne pe products aa jaaye 
+comonent delete hone pe products hatt jaaye 
+
+jab component create hota hai , ya component update hota hai 
+ya jab component destroy hota hai vaise time pe useEffect() apne aap CALL hota hai
+
+
+

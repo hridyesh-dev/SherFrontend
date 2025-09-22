@@ -4,8 +4,8 @@ import Recipes from '../pages/Recipes';
 import About from '../pages/About';
 import Create from '../pages/Create';
 import SingleRecipe from '../pages/SingleRecipe';
-import UpdateRecipe from '../components/UpdateRecipe';
-
+import PageNotFound from '../pages/PageNotFound';
+import Fav from '../pages/Fav';
 const Mainroutes = () => {
   return (
     <Routes>
@@ -14,15 +14,14 @@ const Mainroutes = () => {
 
       <Route path="/recepies" element={<Recipes />} />
 
-      <Route path="/recepies/details/:id" element={<SingleRecipe />}>
+      <Route path="/recepies/details/:id" element={<SingleRecipe />}></Route>
 
-        <Route path="update" element={<UpdateRecipe />} />
-
-      </Route>
-
+      <Route path="/FAV" element={<Fav/>} />
+      
       <Route path="/create-recepie" element={<Create />} />
 
       <Route path="/about" element={<About />} />
+      <Route path="*" element={<PageNotFound/>} />
 
     </Routes>
   );

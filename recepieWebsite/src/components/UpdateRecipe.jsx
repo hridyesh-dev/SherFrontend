@@ -13,13 +13,14 @@ const UpdateRecipe = () => {
 
     const { register, handleSubmit, reset } = useForm({
         defaultValues:{
-            image: recipe.image,
-            chef: recipe.chef,
-            title: recipe.title,
-            desc: recipe.desc,
-            ingr: recipe.ingredients.join(', '),
-            inst: recipe.instructions.join(', '),
-            categories: recipe.category.toLowerCase(),
+            // agar recepie aaya hai toh uske andar see cheeze nikalo 
+            image: recipe?.image,
+            chef: recipe?.chef,
+            title: recipe?.title,
+            desc: recipe?.desc,
+            ingr: recipe?.ingredients.join(', '),
+            inst: recipe?.instructions.join(', '),
+            categories: recipe?.category.toLowerCase(),
         }
 
     });
@@ -39,6 +40,7 @@ const UpdateRecipe = () => {
         );
 
         setdata(updatedData);
+        localStorage.setItem("recipes",JSON.stringify(newRecipe))
 
         toast.success("Recipe Updated Successfully");
         

@@ -8,6 +8,8 @@ const Navbar = () => {
         <NavLink className={(e)=>e.isActive?" text-green-400 transition-all ease-in-out duration-200 ":""} to="/">Home</NavLink>
         
         <NavLink className={(e)=>e.isActive?" text-green-400 transition-all ease-in-out duration-200":""} to="/recepies">Recepies</NavLink>
+
+        <NavLink className={(e)=>e.isActive?" text-green-400 transition-all ease-in-out duration-200":""} to="/fav">Favourite Recepies</NavLink>
         
         <NavLink className={(e)=>e.isActive?" text-green-400 transition-all ease-in-out duration-200":""} to="/about">About</NavLink>
         
