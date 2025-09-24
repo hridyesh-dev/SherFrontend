@@ -1,26 +1,23 @@
-import React from 'react'
-import axios from './api/axiosconfig'
-import { useEffect } from 'react';
-import {asyncgetusers} from './store/userAction'
-import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from "react"
+import Nav from "./components/Nav"
+import Mainroutes from "./routes/Mainroutes"
+import { asynccurrentuser } from "./store/actions/userActions"
+import { useDispatch } from "react-redux"
 
 const App = () => {
+
+  const dispatch=useDispatch();
   
-  // data access karne ke liye we make use of useSelector hook 
-  // we are accessing the data with the help of useSelector hook 
-  const data = useSelector((state)=>state);
-
-  console.log(data);
-
-  //actions call nahi hote dispatich hote hai 
-  const dispatch=useDispatch()
-
   useEffect(()=>{
-    dispatch(asyncgetusers())
+    dispatch(asynccurrentuser())
   },[])
 
+
   return (
-    <div>App</div>
+    <div className=' px-[10%] w-screen h-screen bg-black text-white font-thin '>
+      <Nav/>
+      <Mainroutes/>
+    </div>
   )
 }
 

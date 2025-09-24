@@ -1,14 +1,17 @@
-// yaha saara data store hoga 
-import { configureStore } from '@reduxjs/toolkit'
-import userSlice from "./userSlice";
-//humne store ko configure karke reducers pass krr diye 
-//reducers ko combine karna hai , multiple reducers aaye ge , combine karna hai reducers ko 
-export const store = configureStore({
-    // here we group the slice , store is group of data 
-    // yaha humm group ka data rakhege
-    reducer: {
-        // USER aur store jo jod rahe hai 
-        user:userSlice
-    },
-})
+//jaha saara data store ho ga 
+import {configureStore} from '@reduxjs/toolkit'
 
+import cartSlice from "./reducers/cartSlice";
+import userSlice from "./reducers/userSlice";
+import productSlice from "./reducers/productSlice";
+
+export const store = configureStore({
+
+    // yeh reducer hai yeh sirf slice store karega 
+    reducer:{
+        useReducer : userSlice,
+        productReducer : productSlice,
+        cartReducer : cartSlice,
+    }
+
+})

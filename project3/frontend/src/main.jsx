@@ -1,20 +1,16 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-//store nikal lo
-import { store } from './store/store.jsx'
-//Provider le lo from redux
-import { Provider } from 'react-redux'
-
 import {BrowserRouter} from "react-router-dom"
+import {Provider} from 'react-redux'
+import { store } from './store/store.jsx'
 // wrap the whole application with redux tool kit 
 
 createRoot(document.getElementById('root')).render(
-  
-  <BrowserRouter>
-    <Provider store={store}>
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
-    </Provider>
-  </BrowserRouter>  
+    </BrowserRouter>  
+  </Provider>
 
 )
