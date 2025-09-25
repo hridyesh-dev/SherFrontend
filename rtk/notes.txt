@@ -1,0 +1,74 @@
+RTK is the modern version of Redux is react 
+it is used for state management and compaired to 
+reduct we have to  comparitvely write less code 
+as redux has fixed previous bugs and mistakes 
+
+when we work on a large project we gotta use state management 
+Redux is a library , we should use RTK FOR state management 
+used to deal with the challange of props drilling 
+and eliminated the need of a lot of boilerplate  
+ 
+useDispatch , 
+create slice , 
+configure store , 
+action Creators , 
+create Action , 
+useSelector ,
+
+
+SLICES IN RTK : 
+A function that accepts a "slice name", 
+"an initial state","an object of reducer functions"
+and automatically generates
+action creators and action types that 
+match to the reducers and the state  :Boiler plate nahi likhna automatically banke ready ho jaaye ga
+
+a function that accepts an object
+
+store ke chote parts ko slices kehte hai 
+
+agar services are related then they will be present in the same slice only 
+
+UserSlice ke anada there will be all the related functionality like
+
+-- Add new User
+-- Delete Single User 
+-- Clear All Users 
+All related to user details 
+
+A Sub-part of store where Multiple functionality 
+with same/common data ek saath rakha hua hoga 
+
+functionality/Part of state---> SLICE 
+
+this is how a slice looks like 
+import {CreateSlice} from "@reduxjs/toolkit";
+const users=CreateSlice({
+    name:"user",
+    initialState:[],
+    // THIS IS A BIG REDUCER IT WILL HAVE MULTIPLE MICRO REDUCERS 
+    reducers:{
+        // yaha apne micro reducers ko add karege 
+        //hume iss slice mai kon kon si functionality chahiye
+        //jo jo functionality chahiye voh sab idhar likh de ge 
+        addUser(state,action){},
+        removeUser(state,action){},
+        deleteUsers(state,action){},
+    }
+})
+
+export {users}
+
+
+WHAT IS A STORE AND HOW ITS MADE : 
+Single Source Of data , all components will get data from the store 
+
+
+AGAR IF WE WANT TO UNDATE DATA FROM FRONTEND TO THE REDUX STORE 
+THERE ARE TWO STEPS 
+1) useDispatch() hook : it will trigger the action method/reducer  
+2) Action Creators : 
+
+
+If action is going to used by only one reducer use reducer 
+if action is going to be used by multiple reducers use Extrareducer
