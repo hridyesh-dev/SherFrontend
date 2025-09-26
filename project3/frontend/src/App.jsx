@@ -1,22 +1,25 @@
-import { useEffect } from "react"
-import Nav from "./components/Nav"
-import Mainroutes from "./routes/Mainroutes"
-import { asynccurrentuser } from "./store/actions/userActions"
-import { useDispatch } from "react-redux"
+import axios from './api/axiosconfig';
+import React, { useEffect } from 'react'
 
 const App = () => {
-
-  const dispatch=useDispatch();
   
+  const getProduct=async ()=>{
+    try {
+      const res=await axios.get("/products")
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   useEffect(()=>{
-    dispatch(asynccurrentuser())
+    getProduct();
   },[])
-
-
+  
   return (
-    <div className=' px-[10%] w-screen h-screen bg-black text-white font-thin '>
-      <Nav/>
-      <Mainroutes/>
+
+    <div>
+      App
     </div>
   )
 }
