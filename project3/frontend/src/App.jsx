@@ -1,22 +1,11 @@
-import axios from './api/axiosconfig';
-import React, { useEffect} from 'react'
-import { asyncGetUsers } from './store/userActions';
-import {useDispatch,useSelector} from "react-redux"
+import Nav from "./components/Nav"
+import Mainroutes from "./routes/Mainroutes"
+
 const App = () => {
-  // MAI MAI USE SELECTOR IS ACCESSING THE DATA 
-  const data=useSelector((state=>state))
-  const dispatch=useDispatch()
-  console.log("final data : ",data);
-
-  //ACTION KO APP CALL KRR RAHA HAI 
-  useEffect(()=>{
-    dispatch(asyncGetUsers())
-  },[])
-  
   return (
-
-    <div>
-      App
+    <div className=" text-white font-thin w-screen h-screen bg-black p-20">
+      <Nav/>
+      <Mainroutes/>
     </div>
   )
 }
