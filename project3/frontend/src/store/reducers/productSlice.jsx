@@ -20,4 +20,4 @@ const productSlice=createSlice({
 })
 
 export default productSlice.reducer
-export const {loaduser} = productSlice.actions
+export const {loadproduct} = productSlice.actions

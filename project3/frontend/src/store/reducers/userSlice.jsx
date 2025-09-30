@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
-    users:[]
+    users:null
 }
 
-const userSlice=createSlice({
+const userSlice = createSlice({
     
     name:"user",
     initialState,
     //actions which will change the state -----> current-State
     reducers:{
         // yeh load data can only change the state
-        loaduser:(state,action)=>{
+        loaduser:(state , action )=>{
             state.users = action.payload
         }
     }

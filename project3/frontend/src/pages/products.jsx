@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Products = () => {
-  return (
-    <div>Products</div>
-  )
-}
+  const products = useSelector((state) => state.productReducer.products);
+  console.log(products);
 
-export default Products
+  const data = products.map((product, index) => (
+    <h3 key={index}>{product.title}</h3>
+  ));
+
+  return( 
+    products.length > 0 ? <div>
+      {data}
+    </div> : "Loading .... "
+  )
+};
+
+export default Products;
