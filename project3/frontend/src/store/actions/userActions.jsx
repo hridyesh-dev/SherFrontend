@@ -1,5 +1,5 @@
 import axios from "../../api/axiosconfig"
-import { loaduser } from "../reducers/userSlice";
+import { loaduser,removeUser } from "../reducers/userSlice";
 
 //action mai hogi api call 
 // to Regisering A New User
@@ -37,6 +37,7 @@ export const asyncLogOutUser = () => async(dispatch,getState) => {
         //Remove this data in local storage , banda logOut ho gaya
         localStorage.removeItem("user");
         console.log("User Logged Out");
+        dispatch(removeUser())
     }catch(error){
         console.log(error);
     }

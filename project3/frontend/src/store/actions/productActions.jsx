@@ -21,3 +21,22 @@ export const asyncCreateProduct=(product)=> async(dispatch,getState)=>{
     }
 }
 
+export const asyncupdateProduct = (id, product) => async (dispatch) => {
+    try {
+        await axios.patch(`/products/${id}`, product);
+        dispatch(asyncLoadProduct());
+    }catch (error) {
+        console.log("Update failed:", error);
+    }
+};
+export const asyncdeleteProduct = (id) => async (dispatch) => {
+    try {
+        await axios.delete(`/products/${id}`);
+        dispatch(asyncLoadProduct());
+    }catch (error) {
+        console.log("Update failed:", error);
+    }
+};
+
+
+

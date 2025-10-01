@@ -6,13 +6,13 @@ import Login from '../pages/Login'
 import Register from '../pages/Register'
 import { useSelector } from 'react-redux'
 import CreateProduct from '../pages/admin/CreateProduct'
-import UpdateProduct from '../pages/admin/UpdateProduct'
+import ProductDetails from '../pages/admin/ProductDetails'
 
 const Mainroutes = () => {
 
 
     return (
-        <div>
+        <div className=' '>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/products' element={<Products/>}/>
@@ -23,11 +23,11 @@ const Mainroutes = () => {
                     path='/admin/create-product' 
                     element={<CreateProduct/>}
                 />
-                
                 <Route 
-                    path='/admin/update-product/:id' 
-                    element={<UpdateProduct/>}
+                    path='/product/:id' 
+                    element={<ProductDetails/>}
                 />
+                
             </Routes>
         </div>
     )

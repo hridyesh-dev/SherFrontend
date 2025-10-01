@@ -13,10 +13,14 @@ const userSlice = createSlice({
         // yeh load data can only change the state
         loaduser:(state , action )=>{
             state.users = action.payload
+        },
+
+        removeUser:(state,action)=>{
+            state.users=null;
         }
     }
 
 })
 
 export default userSlice.reducer
-export const {loaduser} = userSlice.actions
+export const {loaduser,removeUser} = userSlice.actions
