@@ -23,6 +23,7 @@ const Mainroutes = () => {
                     path='/admin/create-product' 
                     element={<CreateProduct/>}
                 />
+                
                 <Route 
                     path='/product/:id' 
                     element={<ProductDetails/>}

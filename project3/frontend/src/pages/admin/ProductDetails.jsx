@@ -7,6 +7,7 @@ import { asyncupdateProduct } from "../../store/actions/productActions";
 import { asyncdeleteProduct } from "../../store/actions/productActions";
 
 const ProductDetails = () => {
+  
   const { id } = useParams();
   
   // Get all products
@@ -19,8 +20,6 @@ const ProductDetails = () => {
   
   console.log(product,currentUser);
 
-  
-
   const { register, reset, handleSubmit } = useForm({
     defaultValues:{
       image:product?.image,
@@ -31,7 +30,6 @@ const ProductDetails = () => {
     }
   });
 
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -39,13 +37,10 @@ const ProductDetails = () => {
     dispatch(asyncupdateProduct(id, product));
   };
 
-
   const DeleteHandler=()=>{
     dispatch(asyncdeleteProduct(id));
     navigate("/products")
   }
-
-
 
   return product?(
     <div className=' flex flex-col justify-center items-center'>
