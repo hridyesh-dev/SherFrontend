@@ -13,6 +13,13 @@
       "email": "lakshya@gupta.com",
       "password": "123456789",
       "isAdmin": false
+    },
+    {
+      "id": "7aIp4fcAktb7yI8vcHYRJ",
+      "userName": "hridyesh",
+      "email": "hri@gmail.com",
+      "password": "123123",
+      "isAdmin": false
     }
   ],
   "products": [

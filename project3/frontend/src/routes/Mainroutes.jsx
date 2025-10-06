@@ -10,12 +10,12 @@ import ProductDetails from '../pages/admin/ProductDetails'
 
 const Mainroutes = () => {
 
+    const user = useSelector((state) => state.userReducer.users);
 
     return (
         <div className=' '>
             <Routes>
-                <Route path='/' element={<Home/>}/>
-                <Route path='/products' element={<Products/>}/>
+                <Route path='/' element={user?<Products/>:<Home/>}/>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/register' element={<Register/>}/>
                 

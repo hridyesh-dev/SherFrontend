@@ -16,19 +16,22 @@ export const asyncRegisterUser= (user)=> async (dispatch,getState)=>{
 // check if person exist in db and then set in local storage 
 // JO USER SAVE HAI LOCAL STORAGE MAI VOH LOGIN HAI 
 
-export const asyncLoginUser=(user)=> async(dispatch,getState)=>{
+export const asyncLoginUser = (user) => async (dispatch, getState) => {
     try {
-        //check if person is in db - if it is already registered - and then check for 
-        const {data}=await axios.get(
+        const { data } = await axios.get(
             `/users?email=${user.email}&password=${user.password}`
-        )
+        );
         console.log(data[0]);
-        //save this data in local storage , banda login ho gaya
-        localStorage.setItem("user",JSON.stringify(data[0]))      
-    }catch(error){
+
+        // Save to localStorage
+        localStorage.setItem("user", JSON.stringify(data[0]));
+
+        // ✅ Update Redux store
+        dispatch(loaduser(data[0]));
+        } catch (error) {
         console.log(error);
     }
-}
+};
 
 // to logout the current user 
 //logOut user 
