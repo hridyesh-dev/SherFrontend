@@ -1,19 +1,11 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { asyncLogOutUser } from '../store/actions/userActions';
+import {useSelector } from 'react-redux';
+import { NavLink} from 'react-router-dom';
 
 const Nav = () => {
   const user = useSelector((state) => state.userReducer.users);
   console.log("Logged in user:", user);
 
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const logOutHandler = () => {
-    dispatch(asyncLogOutUser());
-    navigate("/");
-  };
 
   return (
     <nav className='mb-10 text-2xl text-white flex justify-center items-center gap-x-5 p-10'>
@@ -23,12 +15,7 @@ const Nav = () => {
           {user.isAdmin && (
             <NavLink to={"/admin/create-product"}>Create Product</NavLink>
           )}
-          <button
-            onClick={logOutHandler}
-            className='border-white transition-all duration-150 ease-in-out p-2 px-6 rounded hover:border-2 hover:border-red-500'
-          >
-            LogOut
-          </button>
+          <NavLink to={"/admin/user-profile"}>Settings</NavLink>
         </>
       ) : (
         <NavLink to={"/login"}>Login</NavLink>

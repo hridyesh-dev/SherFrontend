@@ -39,7 +39,7 @@ const ProductDetails = () => {
 
   const DeleteHandler=()=>{
     dispatch(asyncdeleteProduct(id));
-    navigate("/products")
+    navigate("/")
   }
 
   return product?(

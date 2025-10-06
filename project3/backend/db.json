@@ -2,17 +2,10 @@
   "users": [
     {
       "id": "SAr4YricGHTeg2p1GUxfW",
-      "userName": "ram ram ",
+      "userName": "RamRam",
       "email": "ram@hanuman.com",
       "password": "123456789",
       "isAdmin": true
-    },
-    {
-      "id": "4xDEdsDYCsb5c4QT1CFlE",
-      "userName": "Lakshya-gupta",
-      "email": "lakshya@gupta.com",
-      "password": "123456789",
-      "isAdmin": false
     },
     {
       "id": "7aIp4fcAktb7yI8vcHYRJ",
@@ -40,7 +33,7 @@
       "category": "Clothes"
     },
     {
-      "id": "iWown3eDtRZDr2tXkfbAU",
+      "id": "RoBFHAZt26rdt9BP0kwFn",
       "image": "",
       "title": "",
       "price": "",

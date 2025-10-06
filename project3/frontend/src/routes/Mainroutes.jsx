@@ -7,6 +7,7 @@ import Register from '../pages/Register'
 import { useSelector } from 'react-redux'
 import CreateProduct from '../pages/admin/CreateProduct'
 import ProductDetails from '../pages/admin/ProductDetails'
+import UserProfile from '../pages/user/UserProfile'
 
 const Mainroutes = () => {
 
@@ -22,6 +23,10 @@ const Mainroutes = () => {
                 <Route 
                     path='/admin/create-product' 
                     element={<CreateProduct/>}
+                />
+                <Route 
+                    path='/admin/user-profile' 
+                    element={<UserProfile/>}
                 />
                 
                 <Route 

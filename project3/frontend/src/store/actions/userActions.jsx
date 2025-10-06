@@ -1,3 +1,4 @@
+
 import axios from "../../api/axiosconfig"
 import { loaduser,removeUser } from "../reducers/userSlice";
 
@@ -18,16 +19,14 @@ export const asyncRegisterUser= (user)=> async (dispatch,getState)=>{
 
 export const asyncLoginUser = (user) => async (dispatch, getState) => {
     try {
-        const { data } = await axios.get(
-            `/users?email=${user.email}&password=${user.password}`
-        );
-        console.log(data[0]);
-
-        // Save to localStorage
-        localStorage.setItem("user", JSON.stringify(data[0]));
-
-        // ✅ Update Redux store
-        dispatch(loaduser(data[0]));
+            const { data } = await axios.get(
+                `/users?email=${user.email}&password=${user.password}`
+            );
+            console.log(data[0]);
+            // Save to localStorage
+            localStorage.setItem("user", JSON.stringify(data[0]));
+            // ✅ Update Redux store
+            dispatch(loaduser(data[0]));
         } catch (error) {
         console.log(error);
     }
@@ -63,3 +62,24 @@ export const asyncCurrentUser=()=> async(dispatch,getState)=>{
     }
 }
 
+export const asyncUpdateuser = (id, user) => async (dispatch, getState) => {
+    try {
+        const { data } = await axios.patch("/users/"+id, user);
+        console.log(data);
+
+        // Update localStorage and Redux
+        localStorage.setItem("user", JSON.stringify(data));
+        dispatch(loaduser(data));
+    } catch (error) {
+        console.log("Update failed:", error);
+    }
+};
+export const asyncdeleteuser = (id) => async (dispatch, getState) => {
+    try {
+        await axios.delete("/users/"+id);
+        dispatch(asyncLogOutUser());
+        console.log("user deleted sucessfully ");
+    } catch (error) {
+        console.log("Update failed:", error);
+    }
+};
