@@ -12,7 +12,7 @@ const Nav = () => {
       <NavLink to={"/"}>Home</NavLink>
       {user ? (
         <>
-          {user.isAdmin && (
+          {user && user.isAdmin && (
             <NavLink to={"/admin/create-product"}>Create Product</NavLink>
           )}
           <NavLink to={"/admin/user-profile"}>Settings</NavLink>

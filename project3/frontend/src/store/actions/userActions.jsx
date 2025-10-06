@@ -67,9 +67,11 @@ export const asyncUpdateuser = (id, user) => async (dispatch, getState) => {
         const { data } = await axios.patch("/users/"+id, user);
         console.log(data);
 
+        //jo data db mai update hua hai usse local storage mai bhi update krr do
         // Update localStorage and Redux
         localStorage.setItem("user", JSON.stringify(data));
-        dispatch(loaduser(data));
+        //application mai bhi change ho gaya 
+        dispatch(asyncCurrentUser());
     } catch (error) {
         console.log("Update failed:", error);
     }
