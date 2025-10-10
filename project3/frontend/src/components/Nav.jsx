@@ -16,6 +16,7 @@ const Nav = () => {
             <NavLink to={"/admin/create-product"}>Create Product</NavLink>
           )}
           <NavLink to={"/admin/user-profile"}>Settings</NavLink>
+          <NavLink to={"/cart"}>Cart</NavLink>
         </>
       ) : (
         <NavLink to={"/login"}>Login</NavLink>

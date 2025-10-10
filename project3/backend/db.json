@@ -5,14 +5,40 @@
       "userName": "Hanshu",
       "email": "ram@hanuman.com",
       "password": "123456789",
-      "isAdmin": true
+      "isAdmin": true,
+      "cart": [
+        [],
+        {
+          "product": {
+            "id": "C8JYA9CC5qyuiGW1rzNRC",
+            "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+            "title": "Prod1",
+            "price": "1200",
+            "description": "good product, nice product",
+            "category": "Clothes"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "1",
+            "title": "Some cool Bag",
+            "price": "10000",
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+          },
+          "quantity": 1
+        }
+      ]
     },
     {
       "id": "7aIp4fcAktb7yI8vcHYRJ",
       "userName": "hridyesh",
       "email": "hri@gmail.com",
       "password": "123123",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     }
   ],
   "products": [
@@ -40,6 +66,5 @@
       "description": "",
       "category": ""
     }
-  ],
-  "carts": []
+  ]
 }

@@ -9,6 +9,7 @@ import CreateProduct from '../pages/admin/CreateProduct'
 import ProductDetails from '../pages/admin/ProductDetails'
 import UserProfile from '../pages/user/UserProfile'
 import AuthWrapper from "./AuthWrapper.jsx";
+import Cart from '../pages/Cart.jsx'
 const Mainroutes = () => {
 
 
@@ -44,6 +45,12 @@ const Mainroutes = () => {
                 <Route path='/product/:id' element={
                     <AuthWrapper>
                         <ProductDetails/>
+                    </AuthWrapper>
+                }/>
+
+                <Route path='/cart' element={
+                    <AuthWrapper>
+                        <Cart/>
                     </AuthWrapper>
                 }/>
                 
