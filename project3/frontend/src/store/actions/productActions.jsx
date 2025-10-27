@@ -29,6 +29,7 @@ export const asyncupdateProduct = (id, product) => async (dispatch) => {
         console.log("Update failed:", error);
     }
 };
+
 export const asyncdeleteProduct = (id) => async (dispatch) => {
     try {
         await axios.delete(`/products/${id}`);

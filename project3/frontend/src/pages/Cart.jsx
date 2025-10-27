@@ -9,14 +9,18 @@ const Cart = () => {
     const products = useSelector((state) => state.productReducer.products);
 
     const increaseQuantityHandler = (index) => {
+        
+        //saare users and unki cart copy karo 
         const copyuser = {
         ...users,
         cart: [...users.cart],
         };
 
+        //item nikalo from cart
         const item = copyuser.cart[index];
         if (!item || !item.product) return;
 
+        // go to the indexof that item and then add and increase its quantity
         copyuser.cart[index] = {
         product: item.product,
         quantity: item.quantity + 1,
@@ -26,28 +30,31 @@ const Cart = () => {
     };
 
     const decreaseQuantityHandler = (index) => {
+        
         const copyuser = {
-        ...users,
-        cart: [...users.cart],
+            ...users,
+            cart: [...users.cart],
         };
 
         const item = copyuser.cart[index];
+        
         if (!item || !item.product) return;
 
         if (item.quantity > 1) {
-        copyuser.cart[index] = {
-            product: item.product,
-            quantity: item.quantity - 1,
-        };
+            copyuser.cart[index] = {
+                    product: item.product,
+                    quantity: item.quantity - 1,
+            };
         } else {
-        copyuser.cart.splice(index, 1); // remove item if quantity is 0
+            // remove item if quantity is 0
+            copyuser.cart.splice(index, 1); 
         }
 
         dispatch(asyncUpdateuser(copyuser.id, copyuser));
     };
 
     const cartItems = users.cart?.map((c, index) => {
-        if (!c?.product) return null;
+        if (!c?.product) return 
 
         return (
         <li

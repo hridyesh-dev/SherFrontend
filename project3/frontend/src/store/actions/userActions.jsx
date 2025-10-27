@@ -23,9 +23,7 @@ export const asyncLoginUser = (user) => async (dispatch, getState) => {
                 `/users?email=${user.email}&password=${user.password}`
             );
             console.log(data[0]);
-            // Save to localStorage
             localStorage.setItem("user", JSON.stringify(data[0]));
-            // ✅ Update Redux store
             dispatch(loaduser(data[0]));
         } catch (error) {
         console.log(error);

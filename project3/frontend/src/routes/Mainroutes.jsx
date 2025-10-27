@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-import Products from '../pages/Products'
-import Login from '../pages/Login'
-import Register from '../pages/Register'
-import PageNotFound from "../pages/PageNotFound"
-import CreateProduct from '../pages/admin/CreateProduct'
-import ProductDetails from '../pages/admin/ProductDetails'
-import UserProfile from '../pages/user/UserProfile'
-import AuthWrapper from "./AuthWrapper.jsx";
-import Cart from '../pages/Cart.jsx'
+const Products=lazy(()=>import("../pages/Products.jsx"))
+const Login=lazy(()=>import("../pages/Login.jsx"))
+const Register=lazy(()=>import("../pages/Register.jsx"))
+const CreateProduct=lazy(()=>import("../pages/admin/CreateProduct.jsx"))
+const ProductDetails=lazy(()=>import("../pages/admin/ProductDetails.jsx"))
+const AuthWrapper=lazy(()=>import("./AuthWrapper.jsx"))
+const UserProfile=lazy(()=>import("../pages/user/UserProfile.jsx"))
+const PageNotFound=lazy(()=>import("../pages/PageNotFound.jsx"))
+const Cart=lazy(()=>import("../pages/Cart.jsx"))
+
 const Mainroutes = () => {
 
 
